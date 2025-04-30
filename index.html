@@ -1,0 +1,212 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/carrinho.css">
+    <link rel="stylesheet" href="styles/carrinho.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Docinhos da Nina</title>
+</head>
+
+<body>
+    
+    <header>
+        <nav id="navbar">
+            <a href="index.html">
+                <img width="100" height="100" src="src/imagens/WhatsApp Image 2025-04-20 at 22.24.11 (1).jpeg"
+                    alt="Logo">
+            </a>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="cardapio.html">Cardápio</a>
+                    <a href="contato.html"> Contato</a>
+                </li>
+            </ul>
+
+            <div id="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+              </div>
+              
+
+           
+              
+              <div id="cart-popup" class="hidden">
+                <h3>Seu Carrinho</h3>
+                <ul id="cart-items"></ul>
+                <p>Total: <span id="cart-total">R$ 0,00</span></p>
+                <button id="checkout-btn">Finalizar Pedido</button>
+              </div>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="cardapio.html">Cardápio</a>
+                    <a href="contato.html"> Contato</a>
+                   
+                </li>
+            </ul>
+          
+
+        </div>
+
+    </header>
+
+    <main>
+        <section id="container3">
+            <div class="container3">
+                <div id="cta">
+                    <h1 class="title">
+                        Deixando seu dia
+                        <span>mais doce</span>
+                    </h1>
+                    <p class="description">
+                        Adoçando vidas desde 2015. Sabor que abraça.
+                    </p>
+                    <div id="cta_buttons">
+                        <a href="cardapio.html" class="btn-default">Ver cardápio</a>
+                        <a href="tel:+11975402514" id="phone_button">
+                            <button class="btn-default">
+                                <i class="fa-solid fa-phone"></i>
+                            </button>
+                            (11) 97540-2514
+                        </a>
+                    </div>
+
+                    <div class="social-media-buttons">
+                        <a href="https://wa.me/551175402514">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/docinhos.danina?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <img width="800" height="600" src="src/imagens/WhatsApp Image 2025-04-24 at 20.02.43.jpeg" alt="">
+            </div>
+        </section>
+        <section id="menu">
+            <h2 class="section-title">Cardápio</h2>
+            <h3 class="section-subtitle">Nossos doces Diários</h3>
+            <div id="dishes">
+                <div class="dish">
+                    <div id="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img width="180" height="180" src="src/imagens/trufas.png" class="dish-image" alt="Trufas">
+                    <h3 class="dish-title">Trufas</h3>
+                    <span class="dish-description">
+                        Recheadas de brigadeiro de limão, morango, maracujá e chocolate meio amargo.
+                    </span>
+                    <div class="dish-price">
+                        <h4>R$3,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                         </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div id="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img width="180" height="180" src="src/imagens/torta.png" class="dish-image" alt="Torta de frango cremosa">
+                    <h3 class="dish-title">Torta de frango cremosa</h3>
+                    <span class="dish-description">Deliciosa torta de frango cremosa.</span>
+                    <div class="dish-price">
+                        <h4>R$10,00</h4>
+            
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                             </button>
+                    
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div id="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img width="180" height="180" src="src/imagens/cookie.png" class="dish-image" alt="Cookies">
+                    <h3 class="dish-title">Cookies</h3>
+                    <span class="dish-description">Tradicional, Double choc, red velvet, aveia e mel maça com canela.</span>
+                    <div class="dish-price">
+                        <h4>R$6,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                         </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div id="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img width="180" height="180" src="src/imagens/pãodemel.png" alt="Pão de mel">
+                    <h3 class="dish-title">Pão de mel</h3>
+                    <span class="dish-description">Pão de mel recheado com o melhor doce de leite.</span>
+                    <div class="dish-price">
+                        <h4>R$10,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                         </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="src/imagens/wave (1).svg" alt="">
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2025 Docinhos da Nina
+            </span>
+          
+          
+              
+            <div class="social-media-buttons">
+                <a href="https://wa.me/551175402514">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/docinhos.danina?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+              
+
+            </div>
+        </div>
+    </footer>
+
+    <div id="cookie-banner" style="display: none;">
+        <div id="cookie-content">
+            <p>Este site utiliza cookies para melhorar a sua experiência. Ao continuar navegando, você concorda com o uso de cookies.</p>
+            <button id="accept-cookies">Aceitar</button>
+            <button id="deny-cookies">Negar</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+
+</body>
+
+</html>

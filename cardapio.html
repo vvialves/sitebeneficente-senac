@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/carrinho.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Cardápio</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html">
+                <img width="100" height="100" src="src/imagens/WhatsApp Image 2025-04-20 at 22.24.11 (1).jpeg"
+                    alt="Logo">
+            </a>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="cardapio.html">Cardápio</a>
+                    <a href="contato.html"> Contato</a>
+                </li>
+            </ul>
+
+            <div id="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+              </div>
+        
+
+              
+              <div id="cart-popup" class="hidden">
+                <h3>Seu Carrinho</h3>
+                <ul id="cart-items"></ul>
+                <p>Total: <span id="cart-total">R$ 0,00</span></p>
+                <button id="checkout-btn">Finalizar Pedido</button>
+              </div>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="cardapio.html">Cardápio</a>
+                    <a href="contato.html"> Contato</a>
+                   
+                </li>
+            </ul>
+          
+
+        </div>
+
+    </header>
+
+    <section id="menu2">
+        <h2 class="section-title2">Cardápio</h2>
+        <h3 class="section-subtitle2">Nossos doces Diários</h3>
+        <div id="dishes">
+            <!-- Dish 1 -->
+            <div class="dish">
+                <div id="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img width="180" height="180" src="src/imagens/trufas.png" class="dish-image" alt="Trufas">
+                <h3 class="dish-title">Trufas</h3>
+                <span class="dish-description">
+                    Recheadas de brigadeiro de limão, morango, maracujá e chocolate meio amargo.
+                </span>
+                <div class="dish-price">
+                    <h4>R$3,00</h4>
+                         <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                         </button>
+                    
+
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="dish">
+                <div id="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img width="180" height="180" src="src/imagens/torta.png" class="dish-image" class="dish-image"
+                    alt="Torta de frango cremosa">
+                <h3 class="dish-title">Torta de frango cremosa</h3>
+                <span class="dish-description">Deliciosa torta de frango cremosa.</span>
+                <div class="dish-price">
+                    <h4>R$10,00</h4>
+        
+                        <button class="btn-default">
+                           <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                   
+                </div>
+            </div>
+
+            <!-- Dish 3 -->
+            <div class="dish">
+                <div id="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img width="180" height="180" src="src/imagens/cookie.jpeg" class="dish-image" alt="Cookies">
+                <h3 class="dish-title">Cookies</h3>
+                <span class="dish-description">Tradicional, Double choc, red velvet, aveia e mel, maça com
+                    canela.</span>
+                <div class="dish-price">
+                    <h4>R$6,00</h4>
+                   
+                        <button class="btn-default">
+                           <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                   
+                </div>
+            </div>
+
+            <!-- Dish 4 -->
+            <div class="dish">
+                <div id="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img width="180" height="180" src="src/imagens/pãodemel.png" alt="Pão de mel">
+                <h3 class="dish-title">Pão de mel</h3>
+                <span class="dish-description">Pão de mel recheado com o melhor doce de leite.</span>
+                <div class="dish-price">
+                    <h4>R$10,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                     </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="menu2">
+
+        <h3 class="section-subtitle3">Especiais (Somente com antecedência) </h3>
+        <div id="dishes">
+            <!-- Dish 1 -->
+            <div class="dish">
+                <div id="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img width="180" height="180" src="src/imagens/cocadacremosa.png" class="dish-image" alt="Trufas">
+                <h3 class="dish-title">Cocada cremosa</h3>
+                <span class="dish-description">
+                    Cocadas cremosas que derretem na boca.
+                </span>
+                <div class="dish-price">
+                    <h4>R$7,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                     </button>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="dish">
+                <div id="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img width="180" height="180" src="src/imagens/geleia.png" class="dish-image" class="dish-image"
+                    alt="Geleia">
+                <h3 class="dish-title">Torta de frango cremosa</h3>
+                <span class="dish-description">Deliciosa torta de frango cremosa.</span>
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                     </button>
+                </div>
+            </div>
+
+            <!-- Dish 3 -->
+            <div class="dish">
+                <div id="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img width="180" height="180" src="src/imagens/minipudim.png" class="dish-image" alt="Cookies">
+                <h3 class="dish-title">Mini pudim</h3>
+                <span class="dish-description"> Mini pudim de leite condensado.</span>
+                <div class="dish-price">
+                    <h4>R$10,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                     </button>
+                </div>
+            </div>
+
+            <!-- Dish 4 -->
+            <div class="dish">
+                <div id="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img width="180" height="180" src="src/imagens/pédemoleque.png" alt="Pão de mel">
+                <h3 class="dish-title">Pé de moleque</h3>
+                <span class="dish-description">Nossa novidade!!! Pé de moleque.</span>
+                <div class="dish-price">
+                    <h4>R$7,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                     </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="menu2">
+        <h3 class="section-subtitle3"></h3>
+
+        <div id="dishes">
+            <!-- Dish 1 -->
+            <div class="dish">
+                <div id="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img width="180" height="180" src="src/imagens/pipocadoce.png" class="dish-image" alt="Trufas">
+                <h3 class="dish-title">Pipoca doce</h3>
+                <span class="dish-description">
+                    Pipoca gourmet de leite ninho.
+                </span>
+                <div class="dish-price">
+                    <h4>R$15,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                     </button>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="dish">
+                <div id="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img width="180" height="180" src="src/imagens/quiche.jpeg" class="dish-image" class="dish-image"
+                    alt="Quiche de palmito">
+                <h3 class="dish-title">Quiche</h3>
+                <span class="dish-description">Deliciosa quiche de palmito.</span>
+                <div class="dish-price">
+                    <h4>R$15,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                     </button>
+                </div>
+            </div>
+
+            <!-- Dish 3 -->
+            <div class="dish">
+                <div id="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img width="180" height="180" src="src/imagens/brownie.jpeg" class="dish-image" alt="Cookies">
+                <h3 class="dish-title">Brownie</h3>
+                <span class="dish-description">Brownie tradicional com gotas de chocolate. </span>
+                <div class="dish-price">
+                    <h4>R$12,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                     </button>
+                </div>
+            </div>
+
+            <!-- Dish 4 -->
+            <div class="dish">
+                <div id="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img width="180" height="180" src="src/imagens/pãodemel.png" alt="Pão de mel">
+                <h3 class="dish-title">Bolo de pote (pequeno)</h3>
+                <span class="dish-description">Pão de mel recheado com o melhor doce de leite.</span>
+                <div class="dish-price">
+                    <h4>R$6,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                     </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu2">
+
+        <h3 class="section-subtitle3"></h3>
+        <div id="dishes">
+            <!-- Dish 1 -->
+            <div class="dish">
+                <div id="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img width="180" height="180" src="src/imagens/WhatsApp Image 2025-04-20 at 20.30.30.jpeg"
+                    class="dish-image" alt="Trufas">
+                <h3 class="dish-title">Bolo de pote (grande)</h3>
+                <span class="dish-description">
+                    Sabores: abacaxi com coco, leite ninho e chocolate com ganache
+                </span>
+                <div class="dish-price">
+                    <h4>R$12,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                     </button>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="dish">
+                <div id="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img width="180" height="180" src="src/imagens/maçadoamor.png" class="dish-image" class="dish-image"
+                    alt="Geleia">
+                <h3 class="dish-title">Maça do amor</h3>
+                <span class="dish-description">A Maçã do Amor traz o contraste perfeito entre o frescor da fruta e a
+                    camada crocante de caramelo.</span>
+                <div class="dish-price">
+                    <h4>R$7,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                     </button>
+                </div>
+            </div>
+
+            <!-- Dish 3 -->
+            <div class="dish">
+                <div id="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img width="180" height="180" src="src/imagens/balabaiana.png" class="dish-image" alt="Cookies">
+                <h3 class="dish-title">Bala baiana</h3>
+                <span class="dish-description"> Feita com coco fresco e coberta com uma camada fina e crocante de
+                    caramelo.</span>
+                <div class="dish-price">
+                    <h4>R$2,50uni</h4>
+                  
+                        <button class="btn-default">
+                           <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="src/imagens/wave (1).svg" alt="">
+        <div id="footer_items">
+
+            <span id="copyright">
+                &copy 2025 Docinhos da Nina
+            </span>
+
+
+           
+            <div class="social-media-buttons">
+                <a href="https://wa.me/5511975402514">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a
+                    href="https://www.instagram.com/docinhos.danina?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                
+
+            </div>
+        </div>
+    </footer>
+
+   
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+#dishes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 32px;
+}
+
+.dish{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 300px;
+    padding: 20px;
+    background-color: #ffabac;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, -.1);
+    position: relative;
+   overflow: hidden;
+}
+.dish .btn-default {
+    background-color: #fff9ea;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dish .btn-default:hover {
+    background-color: #392620;
+}
+
+
+#dish-heart{
+    position: absolute;
+    background-color: #392620;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1,563rem;
+    color: #fff9ea;
+    height: 70px;
+    width: 70px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 25px 0px 35px;
+}
+
+.dish-description{
+    color: #392620;
+    text-align: center;
+}
+
+
+.dish-price{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+@media screen and (max-width: 1400px){
+    #dishes{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .dish{
+        width: calc(50% - 150px);
+    }
+ 
+}
+@media screen and (max-width: 850px){
+    .dish{
+        width: calc(100% - 150px);
+    }
+    
+    #menu .section-subtitle{
+        text-align: center;
+    }
+
+    .section-subtitle3{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+

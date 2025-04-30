@@ -1,0 +1,212 @@
+.contact-form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff5f8;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: #ffabac;
+  margin-bottom: 25px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #444;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ffc0cb;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ffabac;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffabac;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #c65375;
+}
+
+#responseMessage {
+  text-align: center;
+  margin-top: 20px;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.container2 {
+  flex-direction: row-reverse;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding-top: 15px;
+}
+
+header {
+  width: 100%;
+  padding: 28px 8%;
+  position: sticky;
+  top: 0;
+  background-color: #392620;
+  z-index: 1000;
+
+}
+
+
+#navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+#nav_list {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff9ea;
+  font-weight: 600;
+  transition: color 0.3s, border 0.3s;
+}
+
+.nav-item.active a {
+  color: #fff9ea;
+  border-bottom: 3px solid #fff9ea;
+}
+
+
+#mobile_btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #ffabac;
+  cursor: pointer;
+}
+
+
+#mobile_menu {
+  display: none;
+}
+
+#mobile_menu.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #392620;
+  padding: 16px 0;
+  width: 100%;
+}
+
+
+#mobile_nav_list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+}
+
+#mobile_nav_list .nav-item {
+  text-align: center;
+}
+
+@media screen and (max-width: 1170px) {
+
+  #nav_list,
+  #navbar .btn-default {
+    display: none;
+  }
+
+  #mobile_btn {
+    display: block;
+  }
+}
+@media (max-width: 1170px) {
+  
+  body {
+    overflow-x: hidden;
+  }
+
+  .contact-form {
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .contact-form h2 {
+    font-size: 24px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 15px;
+    padding: 10px;
+    width: 100%; 
+    box-sizing: border-box; 
+  }
+
+  .contact-form button {
+    font-size: 15px;
+    padding: 10px;
+    width: 100%; 
+    box-sizing: border-box;
+  }
+
+  
+  .container2 {
+    flex-direction: column;
+    padding: 20px;
+    gap: 25px;
+  }
+
+  #container2 img{
+    display: none;
+}
+}
